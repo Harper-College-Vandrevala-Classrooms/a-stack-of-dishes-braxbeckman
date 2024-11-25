@@ -12,15 +12,23 @@ int main()
   Dish dish6("dish 6");
 
   DishStack stack(5, dish1);
+  std::cout << "Pushing Dish..." << std::endl;
   stack.push(dish2); // works
+  std::cout << "Pushing Dish..." << std::endl;
   stack.push(dish3); // works
+  std::cout << "Pushing Dish..." << std::endl;
   stack.push(dish4); // works
+  std::cout << "Pushing Dish..." << std::endl;
   stack.push(dish5); // works
+  std::cout << "Pushing Dish..." << std::endl;
   stack.push(dish6); // out of space
+
+  std::cout << std::endl << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << std::endl;
 
   std::cout << "Peeking: " << stack.peek().get_description() << std::endl;
   std::cout << "Popping: " << stack.pop().get_description() << std::endl;
   std::cout << "Size: " << stack.size() << std::endl;
   std::cout << "Popping: " << stack.pop().get_description() << std::endl;
   std::cout << "Popping: " << stack.pop().get_description() << std::endl;
+  std::cout << "Size: " << stack.size() << std::endl;
 }

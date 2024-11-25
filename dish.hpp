@@ -10,6 +10,7 @@ public:
   Dish()
   {
   }
+
   Dish(std::string description)
   {
     this->description = description;
